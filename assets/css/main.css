@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"); 
 /*
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn
@@ -326,7 +326,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #828282;
+		color: #000000;
 	}
 
 	blockquote {
