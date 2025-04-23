@@ -2774,6 +2774,7 @@ input, select, textarea {
 		.spotlight .content {
 			width: 70%;
 			margin: 1em;
+			text-align: justify;
 		}
 
 			.spotlight .content > :last-child {
@@ -2792,7 +2793,7 @@ input, select, textarea {
 			}
 
 			.spotlight:nth-child(2n) .content {
-				text-align: right;
+				text-align: justify;
 				margin: 1em;
 			}
 
