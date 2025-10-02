@@ -6,6 +6,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.topnav {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.topnav a {
+	margin-left: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;   /* adjust color to match your theme */
+}
+
+.topnav a:hover {
+	color: #333; /* hover color */
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
