@@ -5,7 +5,26 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+a {
+    color: #003366 !important;
+}
+.card {
+  color: black !important;
+  text-align: justify;
+}
 
+.card b {
+  color: black !important;
+}
+#three .nav-tabs .nav-link.active {
+    background-color: #4696e5;
+    color: #ffffff;
+    border-color: #4696e5;
+}
+
+#three .tab-content {
+    color: #000000;
+}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
