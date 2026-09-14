@@ -35,11 +35,72 @@
       <div class="image phone"><div class="inner"><img src="images/headshot.jpg" alt="" /></div></div>
     </header>
 
+  <!-- Web tools -->
+    <section id="Web_Tools" class="wrapper">
+      <div class="inner">
+        <div class="card" style="background: #ADD8E6" >
+          <div class="card-header">
+            <h4> <b>From Data to Tools</b> </h4>
+            <small>Turning biological data and research into software, databases, and usable resources.</small>
+          </div>
+          <div class="card-body" >
+            <ul class="nav nav-tabs card-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  data-toggle="tab"
+                  href="#oRNAment"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  oRNAment v2
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  data-toggle="tab"
+                  href="#SAPFIR"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  SAPFIR
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content pt-4">
+              <div id="oRNAment" class="tab-pane fade show active"  role="tabpanel">
+                <div class="row">
+                  <p>oRNAment v2 is the updated version of oRNAment, a web-based database for putative interactions between RNA and RNA Binding Proteins (RBPs), developed by <a href="https://www.lecuyerlab.org/"> LÉCUYER Lab of RNA Biology</a> and published in <a href="https://doi.org/10.1093/nar/gkz986">Nucleic Acid Research</a>.</p>
+                  <img src="images/oRNAment.svg" class="img-fluid" alt="oRNAment v2" style="padding: 20px;">
+                  <p>For this updated version, I designed and implemented the data infrastructure, including the DuckDB databases and a Django-based web application to host and serve the resource. While my colleagues focused on generating the underlying data, we worked together to develop new functionalities and incorporate new data that distinguished this version from original resource and similar tools developed by other groups.</p>
+                  <p>The webtool provides an interactive interface to explore putative RBP binding sites, to facilitating research ino RNA regulation.</p>
+                  <p>The updated tool is available at <a href="https://rnabiology.ircm.qc.ca/oRNAmentv2/">here</a> and the accompanying manuscript is in preparation.</p>
+                </div>
+              </div>
+              <div id="SAPFIR" class="tab-pane fade"  role="tabpanel">
+                <div class="row">
+                  <p>SAPFIR is a webtool to explore the functional consequence of RNA alternative splicing, a mechanism that allows one gene to produce multiple RNA isoforms with different protein activities and potential effects on cell fates.</p>
+                  <img src="images/sapfir.png" class="img-fluid" alt="SAFPIR" style="padding: 20px;">
+                  <p>I developed the <b>Enrichment Analysis</b> function, enabling users to upload results of their RNA-seq analysis and investigate the functional impact of their findings. I also enhanced the <b>Single Gene Annotation</b> function, originally developed by a colleague, to expand its usability. In addition, I updated the Django-based web application and geenrated the latest version of the underlying data.</p>
+                  <p>This tool enables rapid functional annotation of alternative splicing events identified through RNA-seq experiments and helps researcheres identify cellular functions affected by a defined splicing program.</p>
+                  <p>The updated tool is available at <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/sapfir/">here</a> while the manuscript is published in <a href="https://doi.org/10.1186/s12859-022-04804-w">BMC Bioinformatics</a>. The companion repo can be found <a href="https://github.com/DelongZHOU/SAPFIR">here</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- Main Projects -->
     <section id="Main Projects" class="wrapper">
       <div class="inner">
         <div class="card" style="background: #ADD8E6" >
-          <div class="card-header"> <h4> <b>Extract Patterns from RNA-seq Data</b> </h4> </div>
+          <div class="card-header">
+            <h4> <b>Research & Discovery</b> </h4>
+            <small>Generating and analyzing biological data to answer scientific questions.</small>
+          </div>
           <div class="card-body" >
             <ul class="nav nav-tabs card-tabs" role="tablist">
               <li class="nav-item" role="presentation">
@@ -79,85 +140,30 @@
             <div class="tab-content pt-4">
               <div id="EV" class="tab-pane fade show active"  role="tabpanel">
                 <div class="row">
-                  <p>My Current Post-Doc research project at <a href="https://www.lecuyerlab.org/">Dr.&nbsp;LÉCUYER Lab of RNA Biology</a> at <a href="https://www.ircm.qc.ca/fr/">Institut de recherches cliniques de Montréal (IRCM)</a> aims to predict RNA secretion signals by training machine learning models on RNA-seq data generated in the lab.<br>Extracellular vesicles (EVs) consist an important cell-cell communication pathway by transporting RNA produced in one cell into another and eliciting changes in the recipient cell. While a lot of existing research studied how small non-coding RNAs are secreted into EVs, the exact mechanism underlying the secretion of messenger RNA (mRNA) into the EV remains unclear.</p>
-                  <p>I built a machine-learning model using Tensorflow & Keras and trained it using RNA-seq data generated in our lab to predict mRNA secretion and identified RNA features that contributed to the predictive power of the model. I explored multiple modal structures to identify the model with the best interpretability. I then validated the results using other RNA-seq datasets from our lab. Further <i>in vitro</i> validations are undergoing.</p>
+                  <p>My Current Post-Doc research project at <a href="https://www.lecuyerlab.org/">Dr.&nbsp;LÉCUYER Lab of RNA Biology</a> at <a href="https://www.ircm.qc.ca/fr/">Institut de recherches cliniques de Montréal (IRCM)</a> aims to predict RNA secretion signals by training machine learning models on RNA-seq data generated in the lab.<br>Extracellular vesicles (EVs) consist an important cell-cell communication pathway by transporting RNA produced in one cell into another and potentially alerting the recipient cell. While a lot of existing research studied how small non-coding RNAs are secreted into EVs, the exact mechanism underlying the secretion of messenger RNA (mRNA) into the EV remains unclear.</p>
+                  <p>I built a machine-learning model using Tensorflow & Keras and trained it using RNA-seq data generated in our lab to predict mRNA secretion and identified RNA features that contributed to the predictive power of the model. I explored multiple model structures to identify the model with the best interpretability. I subsequently validated the findings using independent RNA-seq datasets generated in our lab. Further <i>in vitro</i> validations are undergoing.</p>
                   <img src="images/mhsa.png" class="img-fluid" alt="machine learning" style="padding: 20px;">
-                  <p>This project will improve our understanding of RNA localization and secretion in cancer and neurodegenerative diseases, leading to better patient care.</p>
+                  <p>This project aims to improve our understanding of RNA localization and secretion, with potential relevance in cancer and neurodegenerative diseases, leading to better patient care.</p>
                   <p>The manuscript is currently under preparation.</p>
                 </div>
               </div>
               <div id="DepressedBrain" class="tab-pane fade"  role="tabpanel">
                 <div class="row">
-                  <p>My first Post-Doc research project under <a href="https://www.bagotlab.org/">Dr.&nbsp;Bagot</a> at <a href="https://www.mcgill.ca">McGill University</a> aims to determine how the brain responds to psilocybin, a potential alternative for people unresopnsive to conventional therapy.<br>While clinical data suggest psilocybin could induce long-lasting anti-depressant effect in human patients, its mechanism of action remain largely unclear.</p>
-                  <p>I first accessed the impact of psilocybin on mouse behaviors using an array of standard behavior tests to measure their anxiety level and social interaction with other mice. My colleagues and I then generated Single-Cell RNA-seq libraries in the mouse prefrontal cortex, a brain region readily affected by depression and targeted by anti-depressants. I analyzed the data to identify the gene activity changes induced by psilocybin, which were further validated by my colleagues with <i>in vivo</i> methods.</p>
-                  <img src="images/scRNAseq.png" class="img-fluid" alt="machine learning" style="padding: 20px;">
-                  <p>The findings will improve our understanding of how psilocybin works, therefore support the development of psilocybin as a novel depression treatment, and provide better care for depression patients.</p>
+                  <p>My first Post-Doc research project under <a href="https://www.bagotlab.org/">Dr.&nbsp;Bagot</a> at <a href="https://www.mcgill.ca">McGill University</a> aims to determine how the brain responds to psilocybin, a potential alternative treatment for people who do not respond to conventional therapies.<br>While clinical data suggest that psilocybin could induce long-lasting antidepressant effects in some patients, its underlying mechanism of action remain largely unclear.</p>
+                  <p>I first conducted a range of standard behavioral tests to accessed the effects of psilocybin on anxiety and social interaction in mice. My colleagues and I then generated single-cell RNA-seq libraries from the mouse prefrontal cortex, a brain region strongly implicated in depression and targeted by many antidepressants. I analyzed the resulting data to identify changes in gene activity induced by psilocybin. These findings were subsequently validated by my colleagues with <i>in vivo</i> methods.</p>
+                  <img src="images/scRNAseq.png" class="img-fluid" alt="scRNAseq" style="padding: 20px;">
+                  <p>The findings will improve our understanding of how psilocybin affects the brain, therefore support the development of psilocybin as a novel antidepression treatment, and provide better care for depression patients.</p>
                   <p>The preprint is available at <a href="https://doi.org/10.1101/2025.01.08.631940">bioRxiv</a>.</p>
                 </div>
               </div>
               <div id="Alternative_Splicing" class="tab-pane fade"  role="tabpanel">
                 <div class="row">
-                  <p>My main PhD project supervised by <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/">Dr.&nbsp;Michelle Scott</a> and <a href="https://abouelela.recherche.usherbrooke.ca/en/index.php">Dr.&nbsp;Sherif Abou Elela</a> at <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> studied the regulation of RNA alternative splicing, a process through which one gene can produce multiple RNA isoforms, leading to different protein activities with the potential of deciding cell fates.</p>
-                  <p>RNA Binding Proteins (RBPs) are major regulators of RNA alterantive splicing. However, there is a huge discrepancy between RBP-RNA interaction data and the splicing changes caused by change in RBP expressions.</p>
-                  <p>With the help of my colleagues I generated bulk RNA-seq data where the expression of multiple RBPs are reduced. I then analyzed the data to identify how the change in RBP expression impacted on the splicing profile. Using public available datasets, I discover that RBPs form a splicing-regulating complex whose regulating power changes in function of its binding configuration. I further validated my findinds through a wide range of <i>in vitro</i> approaches.</p>
-                  <img src="images/rbfox2.png" class="img-fluid" alt="machine learning" style="padding: 20px;">
-                  <p>This work shows how RBPs can regulate alternative splicing beyond their direct interacting targets, thereby extending their regulatory capacity to previously overlooked events.</p>
+                  <p>My main PhD project supervised by <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/">Dr.&nbsp;Michelle Scott</a> and <a href="https://abouelela.recherche.usherbrooke.ca/en/index.php">Dr.&nbsp;Sherif Abou Elela</a> at <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> studied the regulation of RNA alternative splicing, a process through which one gene can produce multiple RNA isoforms, and consequently, different proteins with distinct functions and potential effects on cell fate.</p>
+                  <p>RNA Binding Proteins (RBPs) are major regulators of RNA alterantive splicing. However, there is a substantial discrepancy between observed RBP-RNA interaction and the splicing changes resulting from changes in RBP expressions, suggesting that RBPs may regulate splicing through mechanisms beyond their direct RNA targets.</p>
+                  <p>With the help of my colleagues I generated bulk RNA-seq data following the reduction of multiple RBPs. I analyzed these data to identify how the change in RBP expression affected the global splicing profiles. Integrating publicly available datasets, I found evidence that RBPs form a splicing-regulating complex whose regulatory activities varies in function of their binding configuration. I further validated my findinds through a wide range of <i>in vitro</i> approaches.</p>
+                  <img src="images/rbfox2.png" class="img-fluid" alt="rbfox2" style="padding: 20px;">
+                  <p>This work demonstrates how RBPs can regulate alternative splicing beyond their direct interacting targets, thereby extending their regulatory capacity to previously overlooked splicing events.</p>
                   <p>The work is published in <a href="https://doi.org/10.1093/nar/gkab595">Nucleic Acid Research</a>.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  <!-- Web tools -->
-    <section id="Web_Tools" class="wrapper">
-      <div class="inner">
-        <div class="card" style="background: #ADD8E6" >
-          <div class="card-header"> <h4> <b>From Data to Tools</b> </h4> </div>
-          <div class="card-body" >
-            <ul class="nav nav-tabs card-tabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link active"
-                  data-toggle="tab"
-                  href="#oRNAment"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  oRNAment v2
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  data-toggle="tab"
-                  href="#SAPFIR"
-                  role="tab"
-                  aria-selected="false"
-                >
-                  SAPFIR
-                </a>
-              </li>
-            </ul>
-            <div class="tab-content pt-4">
-              <div id="oRNAment" class="tab-pane fade show active"  role="tabpanel">
-                <div class="row">
-                  <p>oRNAment v2 is the updated version of oRNAment, a web-based database for putative interactions between RNA and RNA Binding Proteins (RBPs), developed by <a href="https://www.lecuyerlab.org/"> LÉCUYER Lab of RNA Biology</a> and published in <a href="https://doi.org/10.1093/nar/gkz986">Nucleic Acid Research</a>.</p>
-                  <img src="images/oRNAment.svg" class="img-fluid" alt="oRNAment v2" style="padding: 20px;">
-                  <p>For this updated version, I designed and implemented the data infrastructure for the updated resource, building the DuckDB databases as well as developing the Django-based web application to host and serve the resource, while my colleagues focused on generating the underlying data. We collectively contributed to new functionalities and data that distinguished this version from previously published resource as well as similar tools developed by other groups.</p>
-                  <p>The webtool interactively display the putative RBP binding sites to facilitate research in RNA regulation.</p>
-                  <p>The updated tool is available at <a href="https://rnabiology.ircm.qc.ca/oRNAmentv2/">here</a> while the manuscript is under preparation.</p>
-                </div>
-              </div>
-              <div id="SAPFIR" class="tab-pane fade"  role="tabpanel">
-                <div class="row">
-                  <p>SAPFIR is a webtool to explore the functional consequence of RNA alternative splicing, a mechanism that allows one gene to produce multiple RNA isoforms leading to different protein activities and cell fates.</p>
-                  <img src="images/sapfir.png" class="img-fluid" alt="SAFPIR" style="padding: 20px;">
-                  <p>I developed the Enrichment Analysis function, enabling users to upload results of their RNA-seq analysis to help interprete the functional impact of their findings. I also enhanced the Single Gene Annotation function, originally developed by my colleague, expanding its usability. In addition, I updated the Django-based web application and geenrated the latest version of the underlying data.</p>
-                  <p>This tool allows rapid functional annotation of alternative splicing events identified by RNA-seq experiments and enables the identification of cellular functions affected by a defined splicing program.</p>
-                  <p>The updated tool is available at <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/sapfir/">here</a> while the manuscript is published in <a href="https://doi.org/10.1186/s12859-022-04804-w">BMC Bioinformatics</a>. The companion repo can be found <a href="https://github.com/DelongZHOU/SAPFIR">here</a>.</p>
                 </div>
               </div>
             </div>
@@ -170,7 +176,10 @@
     <section id="Collaborations" class="wrapper">
       <div class="inner">
         <div class="card" style="background: #ADD8E6" >
-          <div class="card-header"> <h4> <b>Collaborations</b> </h4> </div>
+          <div class="card-header"> 
+            <h4> <b>Collaborations</b> </h4> 
+            <small>Bridging bioinformatics and experimental biology.</small>
+          </div>
           <div class="card-body" >
             <ul class="nav nav-tabs card-tabs" role="tablist">
               <li class="nav-item" role="presentation">
@@ -213,7 +222,8 @@
               <div id="YeastStarvation" class="tab-pane fade show active"  role="tabpanel">
                 <div class="row">
                   <div class="col-md-8">
-                    <p>In this collaboration led by Julie Parenteau at <a href="https://abouelela.recherche.usherbrooke.ca/en/index.php">Dr.&nbsp;Sherif Abou Elela's lab</a>, we investigated how RNA splicing helps cells to adapt to nutrient stress in yeast. We identified that <a href="https://doi.org/10.1093/nar/gkaf525">the splicing of a specific set of introns is essential for resisting starvation</a>. These results highlight the role of the spliceosome, the machinery responsible for RNA splicing, as a central hub for environmental signal integration. <b>My analysis of the PolyA RNA-seq experiment revealed a broader splicing switch pattern consistent with previously observed changes in specific genes, providing a more complete view of the underlying mechanism.</b></p>
+                    <p>This collaboration led by Julie Parenteau at <a href="https://abouelela.recherche.usherbrooke.ca/en/index.php">Dr.&nbsp;Sherif Abou Elela's lab</a> investigated how RNA splicing enables yeast to adapt to nutrient stress. We identified  <a href="https://doi.org/10.1093/nar/gkaf525"> a specific set of introns whose splicing is essential to resist starvation, highlighting the role of the spliceosome, the machinery responsible for RNA splicing, as a central hub for environmental signal integration</a>.</p>
+                    </p><b>I analyzed the Poly(A) RNA-seq experiment abd identified a broader splicing switch pattern consistent with previously observed changes in specific genes, providing a more complete view of the underlying mechanism.</b></p>
                   </div>
                   <div class="col-md-4">
                       <img src="images/yeast.jpeg" class="img-fluid" alt="yeast starvation">
@@ -223,7 +233,8 @@
               <div id="MouseHeart" class="tab-pane fade"  role="tabpanel">
                 <div class="row">
                   <div class="col-md-8">
-                    <p>In this collaboration between <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/">Dr.&nbsp;Scott's lab</a> and <a href="https://www.usherbrooke.ca/recherche/fr/specialistes/details/mannix.auger-messier">Dr.&nbsp;Auger-Messier's lab</a>, we investigated the role of Srsf3 in cardiac function by selectively deleting the gene in heart muscle cells. Our findings demonstrate that <a href="https://doi.org/10.1096/fj.202002293rr">loss of Srsf3 disrupts mitochondrial integrity and energy production, leading to cardiomyocyte hypertrophy, impaired contractile function, and early postnatal lethality in mice</a>. These results highlight the critical role of Srsf3 in maintaining mitochondrial homeostasis and cardiac health, providing insights into potential mechanisms underlying mitochondrial dysfunction in heart disease. <b>I analyzed the RNAseq experiment, generated testable hypotheses and identified conclusions that are subsequently evaluated and validated through <i>in vitro</i> experiments.</b></p>
+                    <p>In this collaboration between <a href="https://bioinfo-scottgroup.med.usherbrooke.ca/">Dr.&nbsp;Scott's lab</a> and <a href="https://www.usherbrooke.ca/recherche/fr/specialistes/details/mannix.auger-messier">Dr.&nbsp;Auger-Messier's lab</a>, we investigated the role of Srsf3 in cardiac function by selectively deleting the gene in heart muscle cells. We found that <a href="https://doi.org/10.1096/fj.202002293rr">loss of Srsf3 disrupts mitochondrial integrity and energy production, leading to cardiomyocyte hypertrophy, impaired contractile function, and early postnatal lethality in mice</a>. These results highlight the critical role of Srsf3 in maintaining mitochondrial homeostasis and cardiac health, providing insights into potential mechanisms underlying mitochondrial dysfunction in heart disease.</p>
+                    <p><b>I analyzed the RNAseq experiment, generated testable hypotheses from the results, and identified candidate mechanisms that were subsequently evaluated and validated through <i>in vitro</i> experiments.</b></p>
                   </div>
                   <div class="col-md-4">
                       <img src="images/mouse_heart.png" class="img-fluid" alt="mouse heart">
@@ -233,7 +244,8 @@
               <div id="MouseTracking" class="tab-pane fade"  role="tabpanel">
                 <div class="row">
                   <div class="col-md-8">
-                    <p>In this project led by Heike Schuler in <a href="https://www.bagotlab.org/">Dr.&nbsp;Bagot's lab</a>, we challenge the traditional male-centric metrics in depression research by showing that female mice respond differently to social stress. We show that female mice display unique changes in movement patterns rather than typical social avoidance behaviors. <a href="https://doi.org/10.1016/j.biopsych.2024.11.017">We developed a new metric, based on these movement changes, to better study stress in females.</a> This research highlights the importance of tailoring depression studies to account for differences between sexes. <b>I helped to train the machine learning model to track mouse body parts.</b></p>
+                    <p>In this project led by Heike Schuler in <a href="https://www.bagotlab.org/">Dr.&nbsp;Bagot's lab of Behavioural Neurogenomics</a>, we investigated sex-specific responses to social stress in mice. <a href="https://doi.org/10.1016/j.biopsych.2024.11.017">We found that female mice display unique changes in movement patterns rather than the social avoidance behaviors typically used to assess stress response in male mice. Based on these movement patterns, we developed a new metric to better characterize stress response in female mice.</a> This research highlights the importance of tailoring depression studies to account for differences between sexes.</p>
+                    <p><b>I contributed to training the machine learning model to track mouse body parts.</b></p>
                   </div>
                   <div class="col-md-4">
                       <img src="images/mouse_tracking.png" class="img-fluid" alt="mouse tracking">
